@@ -1,0 +1,3 @@
+[submodule "bash-scripts"]
+	path = bash-scripts
+	url = https://github.com/twert627/bash-scripts
