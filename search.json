@@ -1,0 +1,17 @@
+---
+layout: none
+---
+
+[
+  {% for app in site.data.apps %}
+    {
+      "name"        : "{{ app.name | escape }}",
+      "categories"  : "{{ app.categories }}",
+      "version"     : "{{ app.version }}",
+      "description" : "{{ app.description | escape }}",
+      "url"         : "{{ site.baseurl }}{{ app.url }}",
+      "update_time" : "{{ app.update_time }}",
+      "titleid"     : "{{ app.titleid }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

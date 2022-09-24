@@ -1,0 +1,26 @@
+[
+    {
+		"location": "GitHub",
+		"author": "LumaTeam",
+        "name": "Luma3DS",
+        "console": "3ds",
+        "screenshots": "",
+		"categories": "firm"
+	},
+    {
+        "location": "GitHub",
+        "author": "MrJPGames",
+        "name": "2048-3d",
+        "console": "3ds",
+        "screenshots": "",
+        "categories": "game"
+    },
+    {
+        "location": "GitHub",
+        "author": "geniiii",
+        "name": "3DStris",
+        "console": "3ds",
+        "screenshots": "",
+        "categories": "game"
+    }	
+]
