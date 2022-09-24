@@ -22,8 +22,8 @@ title: BrewShop
 email: twert627@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   One stop shop for all your homebrew needs!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://twert627.github.io/BrewShop" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/BrewShop" # the subpath of your site, e.g. /blog
+url: "https://twert627.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  twert627
 
