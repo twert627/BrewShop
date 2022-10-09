@@ -1,0 +1,29 @@
+#addButton {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 85vh;
+    right: 10vw;
+    border-radius: 50%;
+}
+
+.line {
+    width: 10px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+}
+
+#line-1 {
+    left: 7px;
+    bottom: 3px;
+}
+
+#line-2 {
+    width: 40px;
+    height: 10px;
+    bottom: 28px;
+    right: 8px;
+}

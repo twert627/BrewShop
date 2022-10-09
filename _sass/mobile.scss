@@ -1,0 +1,30 @@
+
+@media only screen and (max-width: 600px) {
+    #sidebar {
+        visibility: hidden;
+    }
+    #hamburger-menu {
+        display: inline;
+        padding: 0;
+        border-style: none;
+        margin-left: 10px;
+        padding-top: 10px;
+        background-color: transparent;
+    }
+    #line-1, #line-2, #line-3 {
+        width: 30px;
+        height: 7px;
+        background-color: blue;
+        margin-bottom: 5px;
+    }
+    #line-1 {
+        top: 0;
+    }
+    #line-2 {
+        top: 5%;
+    }
+    #line-3 {
+        top: 10%;
+        margin-bottom: 0px;
+    }
+}

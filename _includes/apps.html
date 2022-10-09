@@ -1,6 +1,6 @@
-<div class="row row-cols-1 row-cols-md-5 g-4" id="search-result">
+<div class="row row-cols-1 row-cols-md-5 g-4 apps" id="search-result">
   {% for app in site.data.apps%}
-  <div class="col">
+  <div class="col" id="apps">
     <div class="card h-100">
       <img src="{{ site.baseurl }}/assets/images/{{ app.titleid }}.png" alt="" height="32px" width="32px">
       <div class="card-body">
@@ -12,6 +12,7 @@
       </div>
       <div class="card-footer">
         <small class="text-muted">Version: {{ app.version }}</small>
+        <small class="text-muted">Console: {{ app.console }}</small>
       </div>
     </div>
   </div>
