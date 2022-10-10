@@ -1,6 +1,16 @@
+{% if page.console == "3ds" %}
+  {% assign apps = site.data.apps | where:"console", "3ds" %}
+{% elsif page.console == "switch" %}
+  {% assign apps = site.data.apps | where:"console", "switch" %}
+{% elsif page.console == "nds" %}
+  {% assign apps = site.data.apps | where:"console", "nds" %}
+{% else %}
+  {% assign apps = site.data.apps %}
+{% endif %}
+
 <div class="row row-cols-1 row-cols-md-5 g-4 apps" id="search-result">
-  {% for app in site.data.apps%}
-  <div class="col" id="apps">
+  {% for app in apps%}
+  <div class="col apps" id="{{ id }}">
     <div class="card h-100">
       <img src="{{ site.baseurl }}/assets/images/{{ app.titleid }}.png" alt="" height="32px" width="32px">
       <div class="card-body">
