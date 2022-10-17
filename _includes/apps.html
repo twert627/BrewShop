@@ -8,23 +8,48 @@
   {% assign apps = site.data.apps %}
 {% endif %}
 
-<div class="row row-cols-1 row-cols-md-5 g-4 apps" id="search-result">
+{% if page.category == "emulator" %}
+  {% assign apps = apps | where:"categories", "emulator" %}
+{% elsif page.category == "firmware" %}
+  {% assign apps = apps | where:"categories", "firm" %}
+{% elsif page.category == "game" %}
+  {% assign apps = apps | where:"categories", "game" %}
+{% elsif page.category == "romhack" %}
+  {% assign apps = apps | where:"categories", "romhack" %}
+{% elsif page.category == "theme" %}
+  {% assign apps = apps | where:"categories", "theme" %}
+{% elsif page.category == "utilities" %}
+  {% assign apps = apps | where:"categories", "utilities" %}
+{% endif %}
+
+<div class="apps" id="search-result">
   {% for app in apps%}
-  <div class="col apps" id="{{ id }}">
-    <div class="card h-100">
-      <img src="{{ site.baseurl }}/assets/images/{{ app.titleid }}.png" alt="" height="32px" width="32px">
-      <div class="card-body">
-        <h5 class="card-title truncate">{{ app.name }}</h5>
-        <p class="card-text truncate">{{ app.description }}</p>
-        <p>
-          <small>Last Updated: {{ app.update_time }}</small>
-        </p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Version: {{ app.version }}</small>
-        <small class="text-muted">Console: {{ app.console }}</small>
+    <div class="apps" id="{{ id }}">
+      <div class="card h-100">
+        <img src="{{ site.baseurl }}/assets/images/{{ app.titleid }}.png" alt="" height="32px" width="32px">
+        <div class="card-body">
+          <h5 class="card-title truncate">{{ app.name }}
+          </h5>
+          <p class="card-text truncate">{{ app.description }}
+          </p>
+          <p>
+            <small>Last Updated:
+              {{ app.update_time }}
+            </small>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Version:
+            {{ app.version }}
+          </small>
+          <small class="text-muted">Console:
+            {{ app.console }}
+          </small>
+          <small class="text-muted">Category:
+            {{ app.categories }}
+          </small>
+        </div>
       </div>
     </div>
-  </div>
   {% endfor %}
 </div>

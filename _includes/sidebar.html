@@ -12,34 +12,28 @@
     <div class="sidebar-heading">
         <h3>Console</h3>
         <ul class="sidebar-item">
-            <li>
-                <a href="{{ site.baseurl }}/3ds/">3DS</a>
-            </li>
-            <li>
-                <a href="{{ site.baseurl }}/switch/">Switch</a>
-            </li>
-            <li>
-                <a href="{{ site.baseurl }}/nds/">DS(i)</a>
-            </li>
-        </ul>
+            {% for item in site.data.nav %}
+               <li><a href="{{ site.baseurl }}/{{ item.url | downcase }}">{{ item.title }}</a></li>
+            {% endfor %}
+         </ul>
     </div>
     <div class="sidebar-heading">
         <h3>Categories</h3>
         <ul class="sidebar-item">
             <li>
-                Games
+                <a href="{{ site.baseurl }}/{{ page.console }}/category/game">Games</a>
             </li>
             <li>
-                Utilities
+                <a href="{{ site.baseurl }}/{{ page.console }}/category/utilities">Utilities</a>
             </li>
             <li>
-                Firmware
+                <a href="{{ site.baseurl }}/{{ page.console }}/category/firmware">Firmware</a>
             </li>
             <li>
-                Themes
+                <a href="{{ site.baseurl }}/{{ page.console }}/category/theme">Themes</a>
             </li>
             <li>
-                Rom Hacks
+                <a href="{{ site.baseurl }}/{{ page.console }}/category/romhack">Rom Hacks</a>
             </li>
         </ul>
     </div>

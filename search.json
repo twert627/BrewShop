@@ -2,8 +2,19 @@
 layout: none
 ---
 
+{% if page.console == "3ds" %}
+  {% assign apps = site.data.apps | where:"console", "3ds" %}
+{% elsif page.console == "switch" %}
+  {% assign apps = site.data.apps | where:"console", "switch" %}
+{% elsif page.console == "nds" %}
+  {% assign apps = site.data.apps | where:"console", "nds" %}
+{% else %}
+  {% assign apps = site.data.apps %}
+{% endif %}
+
+
 [
-  {% for app in site.data.apps %}
+  {% for app in apps %}
     {
       "name"        : "{{ app.name | escape }}",
       "categories"  : "{{ app.categories }}",

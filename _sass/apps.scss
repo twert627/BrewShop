@@ -2,7 +2,6 @@
     max-width: 100vw;
     margin: auto;
     margin-left: 2vw;
-    flex-wrap: wrap;
 }
 
 // .card {
@@ -24,6 +23,7 @@
 
 .apps {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 5vh;
     background-blend-mode: darken;
 }
