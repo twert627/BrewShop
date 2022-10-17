@@ -38,5 +38,61 @@
         "console": ["3ds", "switch"],
         "screenshots": "",
         "categories": "utilities"
-    }
+    },
+    {
+       "location": "GitHub",
+       "author": "astronautlevel2",
+       "name": "Anemone3DS",
+       "console": ["3ds"],
+       "screenshots": "",
+       "categories": "utilities" 
+    },
+    {
+        "location": "GitHub",
+        "author": "FlagBrew",
+        "name": "Checkpoint",
+        "console": ["3ds", "switch"],
+        "screenshots": "",
+        "categories": "utilities" 
+     },
+     {
+        "location": "GitHub",
+        "author": "masterfeizz",
+        "name": "DaedalusX64-3DS",
+        "console": ["3ds"],
+        "screenshots": "",
+        "categories": "emulator" 
+     },
+     {
+        "location": "GitHub",
+        "author": "zoogie",
+        "name": "DSP1",
+        "console": ["3ds"],
+        "screenshots": "",
+        "categories": "utilities" 
+     },
+     {
+        "location": "GitHub",
+        "author": "Steveice10",
+        "name": "FBI",
+        "console": ["3ds"],
+        "screenshots": "",
+        "categories": "utilities" 
+     },
+     {
+        "location": "GitHub",
+        "author": "mtheall",
+        "name": "ftpd",
+        "console": ["3ds", "switch", "nds"],
+        "screenshots": "",
+        "categories": "utilities" 
+     },
+     {
+        "location": "GitHub",
+        "author": "d0k3",
+        "name": "GodMode9",
+        "console": ["3ds"],
+        "screenshots": "",
+        "categories": "firm" 
+     }
 ]
