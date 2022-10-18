@@ -7,61 +7,79 @@
 @import "mobile";
 @import "addButton";
 @import "banner";
+@import "theme";
 
 :root {
-    // holds variables
+  color-scheme: dark light;
+  --darkbg: #2C3333;
+  --lightbg: white;
+  --darktext: white;
+  --lighttext: black;
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-    background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  color: var(--darktext);
 }
 
 body {
-    overflow-x: clip;
+  background: var(--darkbg);
+  overflow-x: clip;
 }
 
 main {
-    width: 85vw;
-    height: 90vh;
-    margin-left: 15vw;
-    margin-top: 10vh;
-    display: inline-block;
+  width: 85vw;
+  height: 90vh;
+  margin-left: 15vw;
+  margin-top: 10vh;
+  display: inline-block;
+}
+
+.light {
+  background: var(--lightbg);
+  h1, h2, h3, h4, h5, p, small, a {
+    color: black;
+  }
+  #logo {
+    color: black;
+  }
+}
+
+a {
+  color: white;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #36454f #ffffff;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #36454f #ffffff;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #36454f;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #36454f;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
