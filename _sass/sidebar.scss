@@ -3,21 +3,49 @@
 }
 
 #sidebar {
-    width: 15vw;
+    width: 5vw;
     height: 100vh;
     background-color: transparent;
     color: var(--darktext);
     display: inline-block;
     position: fixed;
-    border-right: 1px solid white;
+    transition: all 300ms ease-in-out;
+}
+
+#sidebar:hover {
+    width: 15vw;
+
+    #logo-image {
+        display: none;
+    }
+
+    #logo-text {
+        display: block;
+    }
+}
+
+#sidebar:hover~main {
+    margin-left: 15vw;
+}
+
+#logo {
+    margin-left: 2vw;
+}
+
+#logo-image {
+    display: inline-block;
+    margin-top: 2vh;
+    transition: 200ms all ease-in-out;
 }
 
 #logo-text {
-    margin: 0;
+    display: none;
+    margin-bottom: 50px;
     text-align: center;
+    transition: 200ms all ease-in-out;
 }
 
-.sidebar-heading > h3 {
+.sidebar-heading>h3 {
     margin-left: 10px;
     margin-bottom: 5px;
 }

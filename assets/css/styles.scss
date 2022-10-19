@@ -10,8 +10,9 @@
 
 :root {
   color-scheme: dark light;
-  --darkbg: #2C3333;
-  --lightbg: white;
+  --darkbg: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,26,46,1) 35%);
+  // --darkbg: #2C3333;
+  --lightbg: linear-gradient(to right, #d7e1ec, #ffffff);
   --darktext: white;
   --lighttext: black;
 }
@@ -29,16 +30,43 @@ body {
 
 body {
   background: var(--darkbg);
+  background-attachment: fixed;
   overflow-x: clip;
 }
 
 main {
   width: 85vw;
-  height: 90vh;
-  margin-left: 15vw;
+  margin-left: 10vw;
   margin-top: 10vh;
   display: inline-block;
+  transition: all 500ms ease;
 }
+
+// .tooltip {
+//   position: relative;
+//   display: inline-block;
+//   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+// }
+
+// /* Tooltip text */
+// .tooltip .tooltiptext {
+//   display: none;
+//   width: 120px;
+//   background-color: green;
+//   color: black;
+//   text-align: center;
+//   padding: 5px 0;
+//   border-radius: 6px;
+ 
+//   /* Position the tooltip text - see examples below! */
+//   position: absolute;
+//   z-index: 1;
+// }
+
+// /* Show the tooltip text when you mouse over the tooltip container */
+// .tooltip:hover .tooltiptext {
+//   display: block;
+// }
 
 .light {
   background: var(--lightbg);
@@ -47,6 +75,9 @@ main {
   }
   #logo {
     color: black;
+  }
+  .banner {
+    background-image: linear-gradient(to right, #63a4ff, #83eaf1);
   }
 }
 

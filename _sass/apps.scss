@@ -1,43 +1,40 @@
-.row {
-    max-width: 100vw;
-    margin: auto;
-    margin-left: 2vw;
+.apps-container {
+    margin-top: 5vh;
 }
-
-// .card {
-//     padding: 5px;
-//     display: inline-block;
-//     position: relative;
-//     width: 100%;
-//     height: auto;
-//     max-height: 100%;
-//     border-radius: 10px;
-//     color: black;
-//     background: white;
-//     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-//     min-width: 100px;
-//     float: none;
-//     margin-bottom: 10px;
-//     text-align: center;
-// }
 
 .apps {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 5vh;
     background-blend-mode: darken;
 }
 
 .card {
     color: var(--darktext);
     width: 300px;
-    height: 200px;
+    height: 280px;
     padding: 5px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    display: flex;
     align-content: normal;
     margin: 10px;
     border-radius: 10px;
+}
+
+.card-image {
+    position: relative;
+    left: 36%
+}
+
+.card-title, .card-text, .card-body > p {
+    margin: 0;
+}
+
+.card-body {
+   height: 14vh;
+}
+
+.card-footer {
+    text-align: center;
 }
 
 .card:hover {
@@ -55,11 +52,10 @@
 //     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 // }
 
-// .truncate {
-//     white-space: pre;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-// }
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .hide {
     display: none;

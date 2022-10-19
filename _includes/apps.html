@@ -1,55 +1,58 @@
 {% if page.console == "3ds" %}
-  {% assign apps = site.data.apps | where:"console", "3ds" %}
+{% assign apps = site.data.apps | where:"console", "3ds" %}
 {% elsif page.console == "switch" %}
-  {% assign apps = site.data.apps | where:"console", "switch" %}
+{% assign apps = site.data.apps | where:"console", "switch" %}
 {% elsif page.console == "nds" %}
-  {% assign apps = site.data.apps | where:"console", "nds" %}
+{% assign apps = site.data.apps | where:"console", "nds" %}
 {% else %}
-  {% assign apps = site.data.apps %}
+{% assign apps = site.data.apps %}
 {% endif %}
 
 {% if page.category == "emulator" %}
-  {% assign apps = apps | where:"categories", "emulator" %}
+{% assign apps = apps | where:"categories", "emulator" %}
 {% elsif page.category == "firmware" %}
-  {% assign apps = apps | where:"categories", "firm" %}
+{% assign apps = apps | where:"categories", "firm" %}
 {% elsif page.category == "game" %}
-  {% assign apps = apps | where:"categories", "game" %}
+{% assign apps = apps | where:"categories", "game" %}
 {% elsif page.category == "romhack" %}
-  {% assign apps = apps | where:"categories", "romhack" %}
+{% assign apps = apps | where:"categories", "romhack" %}
 {% elsif page.category == "theme" %}
-  {% assign apps = apps | where:"categories", "theme" %}
+{% assign apps = apps | where:"categories", "theme" %}
 {% elsif page.category == "utilities" %}
-  {% assign apps = apps | where:"categories", "utilities" %}
+{% assign apps = apps | where:"categories", "utilities" %}
 {% endif %}
 
-<div class="apps" id="search-result">
+<div class="apps apps-container" id="search-result">
   {% for app in apps%}
-    <div class="apps" id="{{ id }}">
-      <div class="card h-100">
-        <img src="{{ site.baseurl }}/assets/images/{{ app.titleid }}.png" alt="" height="32px" width="32px">
-        <div class="card-body">
-          <h5 class="card-title truncate">{{ app.name }}
-          </h5>
-          <p class="card-text truncate">{{ app.description }}
-          </p>
-          <p>
-            <small>Last Updated:
-              {{ app.update_time }}
-            </small>
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Version:
-            {{ app.version }}
-          </small>
-          <small class="text-muted">Console:
-            {{ app.console }}
-          </small>
-          <small class="text-muted">Category:
-            {{ app.categories }}
-          </small>
-        </div>
+  <div class="apps" id="{{ id }}">
+    <div class="card h-100">
+      <img class="card-image" src="{{ site.baseurl }}/assets/images/app_icon/{{ app.titleid }}.png" alt="" height="25%" width="25%">
+      <div class="card-body">
+        <h5 class="card-title truncate">{{ app.name }}
+        </h5>
+        <p class="card-text truncate tooltip">
+          {{ app.description }}
+          <!-- <span class="tooltiptext">{{ app.description }}</span> -->
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Version:
+          {{ app.version }}
+        </small>
+        </br>
+        <small class="text-muted">Console:
+          {{ app.console }}
+        </small>
+        </br>
+        <small class="text-muted">Category:
+          {{ app.categories }}
+        </small>
+        </br>
+        <small>Last Updated:
+          {{ app.update_time }}
+        </small>
       </div>
     </div>
+  </div>
   {% endfor %}
 </div>

@@ -94,13 +94,5 @@
         "console": ["3ds"],
         "screenshots": "",
         "categories": "firm" 
-     },
-     {
-        "location": "GitHub",
-        "author": "masterfeizz",
-        "name": "DaedalusX64-3DS",
-        "console": ["3ds"],
-        "screenshots": "",
-        "categories": "emulator" 
      }
 ]
