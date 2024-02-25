@@ -1,0 +1,196 @@
+repo_name: twert627/BrewShop
+report_id: cff80032b549bfaa93c286c6d93ca9df
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-25T19:19:13+00:00'
+requested_by: actions-user
+provider: github
+branch: main
+detected_tools_count: 14
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/twert627/BrewShop
+  detection_source: Repo Metadata
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/twert627/BrewShop
+  detection_source: Repo Metadata
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/twert627/BrewShop
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/twert627/BrewShop
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/.github/workflows/update-apps.yml
+  detection_source: ".github/workflows/update-apps.yml"
+  last_updated_by: twert
+  last_updated_on: 2022-09-24 14:55:36.000000000 Z
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-19 21:54:30.000000000 Z
+- name: Jekyll
+  description: Blog-aware, static site generator in Ruby
+  website_url: http://jekyllrb.com/
+  version: 4.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Static Site Generators
+  image_url: https://img.stackshare.io/service/1114/ad968c1615d956e800fa36494314f48c.jpeg
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-24 14:06:32.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/twert627/BrewShop
+  detection_source: Repo Metadata
+- name: http_parser.rb
+  description: Ruby bindings to http://github.com/ry/http-parser and http://github.com/a2800276/http-parser.java
+  package_url: https://rubygems.org/http_parser.rb
+  version: 0.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19361/default_586c7ce6af1eca79bd84e28b9ad0423907b71664.png
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-19 21:54:30.000000000 Z
+- name: jekyll-feed
+  description: A Jekyll plugin to generate an Atom feed of your Jekyll posts
+  package_url: https://rubygems.org/jekyll-feed
+  version: 0.16.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19149/default_b0a1033a29112f6f50b1dd3157e5fbf94dd2778a.png
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-24 14:06:32.000000000 Z
+- name: tzinfo
+  description: TZInfo provides access to time zone data and allows times to be converted
+    using time zone rules
+  package_url: https://rubygems.org/tzinfo
+  version: '1.2'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18981/default_eb163f66039a75cd168fad8a88ccdb68b82bccff.png
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-19 21:54:30.000000000 Z
+  vulnerabilities:
+  - name: TZInfo relative path traversal vulnerability allows loading of arbitrary
+      files
+    cve_id: CVE-2022-31163
+    cve_url: https://github.com/advisories/GHSA-5cm2-9h8c-rvfx
+    detected_date: Jul 22
+    severity: high
+    first_patched: 1.2.10
+- name: tzinfo-data
+  description: TZInfo::Data contains data from the IANA Time Zone database packaged
+    as Ruby modules for use with TZInfo
+  package_url: https://rubygems.org/tzinfo-data
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19516/default_07037590725b871de29c1d2ebb4610950e953355.png
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-19 21:54:30.000000000 Z
+- name: wdm
+  description: Windows Directory Monitor
+  package_url: https://rubygems.org/wdm
+  version: 0.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-19 21:54:30.000000000 Z
+- name: webrick
+  description: WEBrick is an HTTP server toolkit that can be configured as an HTTPS
+    server
+  package_url: https://rubygems.org/webrick
+  version: 1.7.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19444/default_e747a715ce0379afdb68c78657d70e4a512bf5f4.png
+  detection_source_url: https://github.com/twert627/BrewShop/blob/main/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: twert
+  last_updated_on: 2022-09-19 21:54:30.000000000 Z
